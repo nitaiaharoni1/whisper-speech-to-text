@@ -4,6 +4,10 @@
   "description": "A JavaScript library enabling in-browser audio recording and transcription using OpenAI's Whisper Speech-to-Text",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitaiaharoni1/whisper-speech-to-text.git"
+  },
   "keywords": [
     "speech",
     "speech-to-text",
