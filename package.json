@@ -1,6 +1,6 @@
 {
   "name": "whisper-speech-to-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript library enabling in-browser audio recording and transcription using OpenAI's Whisper Speech-to-Text",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
