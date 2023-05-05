@@ -1,0 +1,47 @@
+{
+  "name": "whisper-speech-to-text",
+  "version": "1.0.35",
+  "description": "A JavaScript library enabling in-browser audio recording and transcription using OpenAI's Whisper Speech-to-Text",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "speech",
+    "speech-to-text",
+    "openai whisper",
+    "text",
+    "transcription",
+    "audio",
+    "recording",
+    "OpenAI",
+    "Whisper",
+    "Speech-to-Text",
+    "STT"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "bump": "npm version patch",
+    "package": "npm run lint && npm run build && npm run bump && npm publish",
+    "lint": "eslint --ext .ts src"
+  },
+  "author": "Nitai Aharoni",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "recordrtc": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "@types/recordrtc": "^5.6.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.39.0",
+    "eslint-config-eslint": "^7.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "typescript": "^5.0.4"
+  }
+}
