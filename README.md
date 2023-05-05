@@ -10,39 +10,23 @@ npm i whisper-speech-to-text
 
 ## Usage
 
-First, import the `WhisperSTT` class from the library:
-
-```javascript
+```typescript
+// Import the WhisperSTT class from the library
 import { WhisperSTT } from 'whisper-speech-to-text';
-```
 
-Then, create a new instance of the `WhisperSTT` class, passing your OpenAI API key to the constructor:
-
-```javascript
+// Create a new instance of the WhisperSTT class, passing your OpenAI API key to the constructor
 const whisper = new WhisperSTT('your-openai-api-key');
-```
 
-You can then start recording audio:
-
-```javascript
+// Start recording audio
 await whisper.startRecording();
-```
 
-If you want to pause the recording, you can do so:
-
-```javascript
+// Pause the recording
 await whisper.pauseRecording();
-```
 
-And then resume it:
-
-```javascript
+// Resume the recording
 await whisper.resumeRecording();
-```
 
-When you're done recording, you can stop it and get the transcription:
-
-```javascript
+// Stop the recording and get the transcription
 await whisper.stopRecording((text) => {
   console.log('Transcription:', text);
 });
